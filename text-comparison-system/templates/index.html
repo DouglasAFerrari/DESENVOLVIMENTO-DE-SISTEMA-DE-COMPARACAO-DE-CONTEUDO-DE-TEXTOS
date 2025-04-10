@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Textos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador de Conteúdo Textual</h1>
+        <p>Envie dois arquivos de texto (.txt, .pdf, .docx) para calcular o índice de correlação entre eles.</p>
+
+        <form id="upload-form">
+            <div class="file-input">
+                <label for="file1">Arquivo 1:</label>
+                <input type="file" id="file1" name="file1" accept=".txt,.pdf,.docx" required>
+            </div>
+            <div class="file-input">
+                <label for="file2">Arquivo 2:</label>
+                <input type="file" id="file2" name="file2" accept=".txt,.pdf,.docx" required>
+            </div>
+            <button type="button" id="compareBtn">Comparar Arquivos</button>
+        </form>
+
+        <div id="result-area" class="result-area" style="display: none;">
+            <h2>Resultado da Comparação</h2>
+            <p id="result-text"></p>
+            <div id="loading" style="display: none;">
+                <p>Processando...</p>
+                </div>
+            <div id="error-message" class="error" style="display: none;">
+                <p>Ocorreu um erro.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
