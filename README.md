@@ -1,5 +1,7 @@
 ﻿# DESENVOLVIMENTO-DE-SISTEMA-DE-COMPARACAO-DE-CONTEUDO-DE-TEXTOS
 
+ Projeto Final de Curso - BACHARELADO EM ENGENHARIA DE SOFTWARE
+
 ## Instruções para Execução:
 
 Pré-requisitos:
